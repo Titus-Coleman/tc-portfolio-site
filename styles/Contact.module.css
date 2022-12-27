@@ -1,0 +1,60 @@
+.contactBox {
+    position: relative;
+}
+
+.contactForm {
+    position: relative;
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.contactForm form div {
+    margin: 1rem;
+}
+
+.inputDiv {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.inputLabel {
+    position: absolute;
+    top: -0.1rem;
+    left: 0.1rem;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+
+.inputForm:focus ~ .inputLabel,
+.inputForm:required:valid ~ .inputLabel,
+.inputForm:optional:valid ~ .inputLabel {
+    top: -1.5rem;
+}
+
+
+#email:focus:invalid ~ .inputLabel {
+    top: -1.5rem;
+    color: red;
+}
+
+
+
+.inputForm {
+    background: transparent;
+    border: none;
+    border-bottom: 0.1rem solid #000000;
+    width: 75%;
+}
+
+.msgForm {
+    height: 10rem;
+    width: 100%
+}
+
+.formBtn {
+    text-transform: uppercase;
+    margin-top: -2.5rem;
+}
+

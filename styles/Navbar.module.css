@@ -1,0 +1,30 @@
+.navbar {
+    position: sticky;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+    padding: 0.5rem;
+    justify-content: space-between;
+    /* background-color: aliceblue; */
+    z-index: 1;
+    border-radius: 1.5rem;
+}
+
+.socials, .navlist {
+    display: none;
+}
+
+.resume_btn {
+    
+    background-color: #7E52A0;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    /* margin: 0.5rem; */
+    cursor: pointer;
+}
+
+@media (min-width: 480px) {
+    .socials {
+    }
+}
