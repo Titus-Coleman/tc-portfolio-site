@@ -24,9 +24,10 @@ export default function Home() {
       <Navbar/>
       <main className={styles.main}>
       <Hero />
-      <About />
+      
       <Skills />
       <Portfolio />
+      <About />
       <ContactMe />
       
       </main>

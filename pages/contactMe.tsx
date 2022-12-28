@@ -52,6 +52,7 @@ function ContactMe() {
   return (
     <div className={styles.contactBox}>
     <h2>Contact Me</h2>
+    <p>dev@tituscoleman.com</p>
     <form className={styles.contactForm}
           onSubmit={(handleSubmit)}
           >
@@ -100,10 +101,11 @@ function ContactMe() {
         <input className={styles.inputForm} 
                 name='phone'
                 type={'tel'}
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 value={values.phone}
                 onChange={handleChange}
                 id='phone' required/>
-        <label className={styles.inputLabel}>Phone Number .ext</label>
+        <label className={styles.inputLabel}>Phone Number, e.g.: 555-555-5555</label>
         </div>
         <div className={styles.inputDiv}>
         <input className={styles.inputForm}
