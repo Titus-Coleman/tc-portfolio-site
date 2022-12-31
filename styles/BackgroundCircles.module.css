@@ -1,0 +1,67 @@
+.circle_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.circle5 {
+    position: absolute;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    height: 18rem;
+    width: 18rem;
+    border-width: 0.063rem;
+    border-radius: 624.938rem;
+    border-color: red;
+    margin-top: 13rem;
+    border-style: solid;
+    opacity: 0.6;
+}
+.circle4 {
+    position: absolute;
+    height: 25rem;
+    width: 25rem;
+    border-width: 0.063rem;
+    border-radius: 624.938rem;
+    border-color: red;
+    margin-top: 13rem;
+    border-style: solid;
+    opacity: 0.5;
+}
+
+.circle3 {
+    position: absolute;
+    height: 32rem;
+    width: 32rem;
+    border-width: 0.063rem;
+    border-radius: 624.938rem;
+    border-color: red;
+    margin-top: 13rem;
+    border-style: solid;
+    opacity: 0.4;
+}
+
+.circle2 {
+    position: absolute;
+    height: 40rem;
+    width: 40rem;
+    border-width: 0.063rem;
+    border-radius: 624.938rem;
+    border-color: red;
+    margin-top: 13rem;
+    border-style: solid;
+    opacity: 0.3;
+}
+
+.circle1 {
+    position: absolute;
+    height: 48rem;
+    width: 48rem;
+    border-width: 0.063rem;
+    border-radius: 624.938rem;
+    border-color: red;
+    margin-top: 13rem;
+    border-style: solid;
+    opacity: 0.2;
+}

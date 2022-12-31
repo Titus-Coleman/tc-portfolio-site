@@ -16,6 +16,9 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   position: relative;
+  scroll-snap-type: y var(--tw-scroll-snap-strictness);
+  --tw-scroll-snap-strictness: mandatory;
+  scroll-behavior: smooth;
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -35,4 +38,5 @@ main {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   gap: 0.5rem;
+  z-index: -1;
 }

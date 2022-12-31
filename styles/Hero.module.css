@@ -1,0 +1,87 @@
+.hero_container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    --tw-space-y-reverse: 0;
+    /* margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse))); */
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+    scroll-snap-align: center;
+    overflow: hidden;
+}
+
+.hero_image {
+    border: red;
+    border-style: solid;
+    margin-bottom: 1rem;
+    
+    
+}
+
+.hero_h2 {
+    font-size: 0.6rem;
+    line-height: 1.25rem;
+    scroll-padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.938rem;
+    margin-bottom: 1rem;
+}
+
+.hero_button {
+    background: none;
+    border: none;
+    color: inherit;
+    margin-top: 5rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.arrows {
+	width: 3.75rem;
+	height: 4.5rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -1.875rem;
+	bottom: 1.25rem;
+}
+
+.arrows path {
+	stroke: #E4572E;
+	fill: transparent;
+	stroke-width: 0.063rem;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}

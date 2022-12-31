@@ -23,7 +23,9 @@ export default function Home() {
 
       <Navbar/>
       <main className={styles.main}>
-      <Hero />
+          <Hero />
+        
+      
       
       <Skills />
       <Portfolio />
