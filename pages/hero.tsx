@@ -29,6 +29,7 @@ function Hero({}: Props) {
         width={200}
         height={200}/>
         </div>
+      <div className={styles.heroInfo}>
       <h2 className={styles.hero_h2}>Software Engineer</h2>
       <h1>
         <span>{text}</span>
@@ -40,6 +41,7 @@ function Hero({}: Props) {
         <button className={styles.hero_button}>About</button>
         <button className={styles.hero_button}>Contact</button>
         {/* <button className={styles.hero_button}>Experience</button> */}
+      </div>
       </div>
       <svg className={styles.arrows}>
 							<path className={styles.a1} d="M0 0 L30 32 L60 0"></path>

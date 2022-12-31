@@ -8,7 +8,7 @@
     --tw-space-y-reverse: 0;
     /* margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse))); */
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     overflow: hidden;
 }
 
@@ -18,6 +18,10 @@
     margin-bottom: 1rem;
     
     
+}
+
+.heroInfo {
+    z-index: 20;
 }
 
 .hero_h2 {
@@ -31,11 +35,18 @@
 
 .hero_button {
     background: none;
-    border: none;
+    border: 1px solid transparent;
     color: inherit;
     margin-top: 5rem;
     font-size: 0.8rem;
     text-transform: uppercase;
+    padding: 0.5rem;
+}
+
+.hero_button:hover {  
+    border-bottom: 1px solid #E4572E; 
+    font-style: oblique;
+  
 }
 
 .arrows {
