@@ -50,7 +50,9 @@ function ContactMe() {
 
 
   return (
-    <div className={styles.contactBox}>
+    <div 
+      id='contact'
+      className={styles.contactBox}>
     <h2>Contact Me</h2>
     <p>dev@tituscoleman.com</p>
     <form className={styles.contactForm}

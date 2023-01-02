@@ -4,6 +4,7 @@ import { Cursor, useTypewriter } from "react-simple-typewriter"
 import BackgroundCircles from '../components/BackgroundCircles';
 import styles  from '../styles/Hero.module.css'
 import profilePic from '../public/serge-template.jpeg'
+import Link from 'next/link';
 
 
 type Props = {};
@@ -36,11 +37,22 @@ function Hero({}: Props) {
         <Cursor cursorColor='#E4572E'/>
       </h1>
       <div>
-        <button className={styles.hero_button}>Skills</button>
-        <button className={styles.hero_button}>Projects</button>
-        <button className={styles.hero_button}>About</button>
-        <button className={styles.hero_button}>Contact</button>
-        {/* <button className={styles.hero_button}>Experience</button> */}
+        <Link href="#skills"
+              className={styles.hero_button}>
+          Skills
+        </Link>
+        <Link href="#projects"
+              className={styles.hero_button}>
+          Projects
+        </Link>
+        <Link href="#about"
+              className={styles.hero_button}>
+          About
+        </Link>
+        <Link href="#contact"
+              className={styles.hero_button}>
+          Contact
+        </Link>
       </div>
       </div>
       <svg className={styles.arrows}>
