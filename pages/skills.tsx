@@ -55,7 +55,7 @@ function Skills() {
             <div className={styles.hexagon}>
                 <div className={styles.img__container}> 
                         <Image
-                            className={styles.imageDiv}
+                            className={styles.imageDiv0}
                             src={"/react.svg"}
                             alt="React Library"
                             fill
