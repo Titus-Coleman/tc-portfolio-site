@@ -67,6 +67,10 @@
     opacity: 0.9;
   }
 
+.imageDiv0{
+    object-fit: contain;
+    transform: scale(0.5);
+} 
 .imageDiv1 {
     background-color: #3178C6;
 }
@@ -79,16 +83,14 @@
 
 .imageDiv4{
     object-fit: contain;
-    /* width: 100% !important; */
-    /* position: relative !important; */
-    /* height: unset !important; */
     transform: scale(0.75);
 }
 .imageDiv5{
     object-fit: contain;
-    /* width: 100% !important; */
-    /* position: relative !important; */
-    /* height: unset !important; */
+    transform: scale(0.70);
+}
+.imageDiv6{
+    object-fit: contain;
     transform: scale(0.75);
 }
 /* Needs fixing */

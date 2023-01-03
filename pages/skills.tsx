@@ -175,7 +175,7 @@ function Skills() {
             <div className={styles.hexagon}>
                 <div className={styles.img__container}> 
                         <Image
-                            className={styles.imageDiv}
+                            className={styles.imageDiv5}
                             src={"/postgresql.svg"}
                             alt="Postgres Database"
                             fill
@@ -190,7 +190,7 @@ function Skills() {
             <div className={styles.hexagon}>
                 <div className={styles.img__container}> 
                         <Image
-                            className={styles.imageDiv5}
+                            className={styles.imageDiv6}
                             src={"/solana.svg"}
                             alt="Solana Blockchain"
                             fill
