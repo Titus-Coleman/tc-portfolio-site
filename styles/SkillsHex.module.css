@@ -1,6 +1,8 @@
 .hex_container {
     position: relative;
     background: transparent; /* #492540/* #282828; */
+    position: relative;
+    background: transparent; /* #492540/* #282828; */
 }
 
 #grid {
@@ -36,6 +38,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    background: #D8E1FF;
     background: #D8E1FF;
     -o-transform: skewY(-30deg) rotate(60deg);
     -moz-transform: skewY(-30deg) rotate(60deg);
