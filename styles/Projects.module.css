@@ -1,0 +1,6 @@
+.slideshow {
+    display: inline-flex;
+    gap: 2rem;
+    justify-items: center;
+    margin: auto;
+}

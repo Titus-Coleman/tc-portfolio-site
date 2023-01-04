@@ -1,8 +1,21 @@
 .hex_container {
     position: relative;
-    background: transparent; /* #492540/* #282828; */
-    position: relative;
-    background: transparent; /* #492540/* #282828; */
+    background: transparent;
+    scroll-snap-align: start;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.skillsTitle {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 10rem;
 }
 
 #grid {
@@ -68,6 +81,7 @@
 
 .img__container:hover .overlay {
     opacity: 0.9;
+
   }
 
 .imageDiv0{
@@ -84,7 +98,7 @@
     background-color: black;
 }
 
-.imageDiv4{
+.imageDiv4, .imageDiv6{
     object-fit: contain;
     transform: scale(0.75);
 }
@@ -92,17 +106,10 @@
     object-fit: contain;
     transform: scale(0.70);
 }
-.imageDiv6{
-    object-fit: contain;
-    transform: scale(0.75);
+
+.imageDivGit {
+    transform: scale(0.9);
 }
-/* Needs fixing */
-/* #grid li .hexagon .img__container .imageDiv4 {
-    border-style: solid;
-    border: #539E43;
-    object-position:;
-   
-} */
 
 
 

@@ -12,7 +12,6 @@
 }
 
 .aboutText {
-    /* position: absolute; */
     margin-top: 2rem;
 }
 
@@ -21,9 +20,7 @@
 }
 
 .aboutTitle {
-    /* position: absolute; */
     text-transform: uppercase;
-    /* top: 6rem; */
     letter-spacing: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;

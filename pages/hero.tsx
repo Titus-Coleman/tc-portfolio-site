@@ -12,9 +12,9 @@ type Props = {};
 function Hero({}: Props) {
     const [text, count] = useTypewriter({
       words: [
-          '👋 I\'m Titus Coleman',
+          'relentless learner.',
           'web3 native.',
-          'I love 💗 simple UIs', 
+          'I 💗 simple UIs.', 
           '...and Cortados! ☕'],
       loop: true,
       delaySpeed: 2000,
@@ -26,16 +26,17 @@ function Hero({}: Props) {
       <div className={styles.hero_image}>
       <Image 
         src={profilePic}
-        alt='photo of Titus Coleman'
+        alt='photo of Titus Coleman - Software Engineer / web3 Developer'
         width={200}
         height={200}/>
         </div>
       <div className={styles.heroInfo}>
+        <h1>Titus Coleman</h1>
       <h2 className={styles.hero_h2}>Software Engineer</h2>
-      <h1>
+      <h3>
         <span>{text}</span>
         <Cursor cursorColor='#E4572E'/>
-      </h1>
+      </h3>
       <div>
         <Link href="#skills"
               className={styles.hero_button}>

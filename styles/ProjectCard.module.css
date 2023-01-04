@@ -1,0 +1,68 @@
+.card {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 35rem;
+    width: 20rem;
+    overflow: auto;
+    color: #012A36;
+    text-decoration: none;
+    border-radius: calc(40 * 0.063rem);
+    border-color: blueviolet;
+    border-style: dashed;
+    padding: 1rem;
+    background-color: #D8E1FF;
+    margin: auto;
+    box-shadow: black;
+}
+
+.card__img {
+    border-color: red;
+    border-style: dashed;
+    width: 100%;
+}
+
+.card__title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card__description {
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+}
+
+.card__info {
+
+}
+
+.card__techstack {
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.card__tag{
+    display: inline-block;
+    border-radius: 3px;
+    padding: .2rem .5rem .3rem;
+    border-radius: 4px;
+    background: gray;
+    /* color: var(--text-color); */
+    font-weight: 500;
+    margin: .25em .1em;
+    font-size: 0.6rem;
+}
+
+
+.card__links {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.card__links > button {
+    border-radius: 1rem;
+    border-width: 1px;
+    border-color: #E4572E;
+    background: none;
+}

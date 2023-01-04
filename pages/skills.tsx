@@ -5,6 +5,7 @@ import styles from '../styles/SkillsHex.module.css'
 function Skills() {
   return (
     <section className={styles.hex_container}>
+        <h3 className={styles.skillsTitle}>Skillset</h3>
       <ul id={styles.grid} className={styles.clear}>
         <li>
             <div className={styles.hexagon}>
@@ -197,6 +198,111 @@ function Skills() {
                         />
                     <div className={styles.overlay}>
                         <h4 className={styles.text}>Solana Blockchain</h4> 
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div className={styles.hexagon}>
+                <div className={styles.img__container}> 
+                        <Image
+                            className={styles.imageDiv}
+                            src={"/xrp-svgrepo-com.svg"}
+                            alt="XRP Blockchain (Ripple)"
+                            fill
+                        />
+                    <div className={styles.overlay}>
+                        <h4 className={styles.text}>XRP Blockchain (Ripple)</h4> 
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div className={styles.hexagon}>
+                <div className={styles.img__container}> 
+                        <Image
+                            className={styles.imageDiv5}
+                            src={"/prisma.svg"}
+                            alt="Primsa ORM"
+                            fill
+                        />
+                    <div className={styles.overlay}>
+                        <h4 className={styles.text}>Prisma ORM</h4> 
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div className={styles.hexagon}>
+                <div className={styles.img__container}> 
+                        <Image
+                            className={styles.imageDiv5}
+                            src={"/css-3.svg"}
+                            alt="CSS"
+                            fill
+                        />
+                    <div className={styles.overlay}>
+                        <h4 className={styles.text}>CSS</h4> 
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div className={styles.hexagon}>
+                <div className={styles.img__container}> 
+                        <Image
+                            className={styles.imageDiv5}
+                            src={"/html-5.svg"}
+                            alt="HTML"
+                            fill
+                        />
+                    <div className={styles.overlay}>
+                        <h4 className={styles.text}>HTML</h4> 
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div className={styles.hexagon}>
+                <div className={styles.img__container}> 
+                        <Image
+                            className={styles.imageDiv0}
+                            src={"/trpc.svg"}
+                            alt="tRPC"
+                            fill
+                        />
+                    <div className={styles.overlay}>
+                        <h4 className={styles.text}>tRPC</h4> 
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div className={styles.hexagon}>
+                <div className={styles.img__container}> 
+                        <Image
+                            className={styles.imageDivGit}
+                            src={"/git-icon.svg"}
+                            alt="git"
+                            fill
+                        />
+                    <div className={styles.overlay}>
+                        <h4 className={styles.text}>git</h4> 
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div className={styles.hexagon}>
+                <div className={styles.img__container}> 
+                        <Image
+                            className={styles.imageDiv5}
+                            src={"/firebase.svg"}
+                            alt="Firebase"
+                            fill
+                        />
+                    <div className={styles.overlay}>
+                        <h4 className={styles.text}>Firebase</h4> 
                     </div>
                 </div>
             </div>
