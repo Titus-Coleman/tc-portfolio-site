@@ -38,7 +38,7 @@ function Navbar() {
             <Link href="#projects">Projects</Link>
             <Link href="#about">About</Link>
         </div> */}
-        <motion.button 
+        {/* <motion.button 
             className={styles.resume_btn}
             initial={{
                 y: -500,
@@ -53,7 +53,7 @@ function Navbar() {
             transition={{ duration: 1.2 }}
             >
             <p>Resume</p>
-        </motion.button>
+        </motion.button> */}
         <motion.div 
             className={styles.socials}
             initial={{

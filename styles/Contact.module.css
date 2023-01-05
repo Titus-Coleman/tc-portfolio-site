@@ -1,5 +1,24 @@
 .contactBox {
     position: relative;
+
+}
+
+.contactTitle {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* margin-bottom: 10rem; */
+    text-align: center;
+}
+
+.contactTitle+p {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 10rem;
+    text-align: center;
 }
 
 .contactForm {
@@ -50,7 +69,8 @@
 
 .msgForm {
     height: 10rem;
-    width: 100%
+    width: 100%;
+    background-color: #F3FFBD
 }
 
 .formBtn {
@@ -58,3 +78,6 @@
     margin-top: -2.5rem;
 }
 
+.msgForm textarea {
+    
+}

@@ -50,11 +50,13 @@ function ContactMe() {
 
 
   return (
+    <section>
+      <h3 className={styles.contactTitle}>Contact</h3>
+      <p>dev@tituscoleman.com</p>
+    
     <div 
       id='contact'
       className={styles.contactBox}>
-    <h2>Contact Me</h2>
-    <p>dev@tituscoleman.com</p>
     <form className={styles.contactForm}
           onSubmit={(handleSubmit)}
           >
@@ -74,7 +76,7 @@ function ContactMe() {
                 id='lastname' required/>
         <label className={styles.inputLabel}>Last Name</label>
         </div>
-        <div className={styles.inputDiv}>
+        {/* <div className={styles.inputDiv}>
         <input className={styles.inputForm} 
                 name='title'
                 value={values.title}
@@ -89,7 +91,7 @@ function ContactMe() {
                 onChange={handleChange}
                 id='company' required/>
         <label className={styles.inputLabel}>Company</label>
-        </div>
+        </div> */}
         <div className={styles.inputDiv}>
         <input className={styles.inputForm} 
                 name='email'
@@ -97,9 +99,9 @@ function ContactMe() {
                 value={values.email}
                 onChange={handleChange}
                 id='email' required/>
-        <label className={styles.inputLabel}>Email</label>
+        <label className={styles.inputLabel}>Email Address</label>
         </div>
-        <div className={styles.inputDiv}>
+        {/* <div className={styles.inputDiv}>
         <input className={styles.inputForm} 
                 name='phone'
                 type={'tel'}
@@ -108,7 +110,7 @@ function ContactMe() {
                 onChange={handleChange}
                 id='phone' required/>
         <label className={styles.inputLabel}>Phone Number, e.g.: 555-555-5555</label>
-        </div>
+        </div> */}
         <div className={styles.inputDiv}>
         <input className={styles.inputForm}
                 name='subject' 
@@ -132,6 +134,7 @@ function ContactMe() {
         <button className={styles.formBtn}type="submit" id='submit' value={'submit'}>Submit</button>
     </form>
     </div>
+    </section>
   )
 }
 
