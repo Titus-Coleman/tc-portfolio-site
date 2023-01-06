@@ -27,33 +27,17 @@ function Navbar() {
             }}
             transition={{ duration: 1.0 }}
             >
-                <SocialIcon 
-                    network='email' 
-                    fgColor="gray"
-                    bgColor="transparent"/> 
-                <p>Get In Touch</p>
+            <button className={styles.resume_btn}>
+                resume    
+            </button>
+                 
         </motion.div>
         {/* <div className={styles.navlist}>
             <Link href="#skills">Skills</Link>
             <Link href="#projects">Projects</Link>
             <Link href="#about">About</Link>
         </div> */}
-        {/* <motion.button 
-            className={styles.resume_btn}
-            initial={{
-                y: -500,
-                opacity: 0,
-                scale: 0.5,
-            }}
-            animate={{
-                y:0,
-                opacity: 1,
-                scale: 1
-            }}
-            transition={{ duration: 1.2 }}
-            >
-            <p>Resume</p>
-        </motion.button> */}
+
         <motion.div 
             className={styles.socials}
             initial={{
@@ -67,7 +51,11 @@ function Navbar() {
                 scale: 1
             }}
             transition={{ duration: 1.0 }}>
-        
+            <SocialIcon 
+                    url='#contact'
+                    network='email' 
+                    fgColor="gray"
+                    bgColor="transparent"/>
             <SocialIcon 
                 url='https://github.com/Titus-Coleman' 
                 target={"_blank"}
@@ -78,16 +66,7 @@ function Navbar() {
                 target={"_blank"}
                 fgColor="gray"
                 bgColor="transparent"/>
-            {/* <SocialIcon 
-                url='https://twitter.com' 
-                target={"_blank"}
-                fgColor="gray"
-                bgColor="transparent"/>
-                <SocialIcon 
-                url='https://discord.com' 
-                target={"_blank"}
-                fgColor="gray"
-                bgColor="transparent"/> */}
+        
         </motion.div>
 
     </nav>

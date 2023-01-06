@@ -52,7 +52,7 @@ function ContactMe() {
   return (
     <section>
       <h3 className={styles.contactTitle}>Contact</h3>
-      <p>dev@tituscoleman.com</p>
+      {/* <p>dev@tituscoleman.com</p> */}
     
     <div 
       id='contact'

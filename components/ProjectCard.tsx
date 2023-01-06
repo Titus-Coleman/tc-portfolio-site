@@ -18,8 +18,8 @@ function ProjectCard() {
             />
         </div>
         <div className={styles.card__info}>
-          <h4 className={styles.card__title}>Fashion Brand Landing Page</h4>
-          <p className={styles.card__description}>A responsive component/landing page informs visitors that the brand launch is coming soon and collects email addresses for future notification. Error state/ Email validation via Javascript and Emails are stored in Supabase on submission. This site component was build as a challenge for FrontendMentor.io.
+          <h4 className={styles.card__title}>Fashion Brand Email Capture Page</h4>
+          <p className={styles.card__description}>A responsive component/landing page informs visitors that the brand launch is coming soon and collects email addresses for future notification. Error state/ Email validation via Javascript and emails are stored in Supabase-Postgres DB on submission.
           </p>
         </div>
       <div className={styles.card__techstack}>
