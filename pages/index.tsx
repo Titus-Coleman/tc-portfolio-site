@@ -8,10 +8,22 @@ import About from './about'
 import Skills from './skills'
 import Projects from './projects'
 import ContactMe from './contactMe'
+import { GetStaticProps } from 'next'
+import { Skill, PageInfo, Project } from '../typings'
+import { fetchPageInfo } from '../utils/fetchPageInfo'
+import { fetchSkills } from '../utils/fetchSkills'
+import { fetchProjects } from '../utils/fetchProjects'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+
+type Props = {
+    pageInfo: PageInfo;
+    skills: Skill[];
+    projects: Project[];
+}
+ 
+export default function Home({pageInfo, skills, projects}: Props) {
   return (
     <>
       <Head>
@@ -27,7 +39,7 @@ export default function Home() {
 
       <Navbar/>
       <main className={styles.main}>
-          <Hero />
+          <Hero pageInfo={pageInfo}/>
         
       
       
@@ -38,5 +50,20 @@ export default function Home() {
       
       </main>
     </>
-  )
-}
+  );
+};
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const pageInfo: PageInfo = await fetchPageInfo();
+  const skills: Skill[] = await fetchSkills();
+  const projects: Project[] = await fetchProjects();
+
+  return {
+    props: {
+      pageInfo,
+      skills,
+      projects,
+    },
+    revalidate: 10,
+  };
+};

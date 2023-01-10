@@ -8,11 +8,6 @@ import { motion } from 'framer-motion'
 function Navbar() {
   return (
     <nav className={styles.navbar}>
-        {/* <Image
-            className='logo'
-            src={''}
-            alt={''} /> */}
-        {/* <div className="logo">Titus Coleman</div> */}
         <motion.div 
             className={styles.email}
             initial={{
@@ -27,16 +22,13 @@ function Navbar() {
             }}
             transition={{ duration: 1.0 }}
             >
+            <Link href={"/example.pdf"} target={"_blank"}>
             <button className={styles.resume_btn}>
                 resume    
             </button>
+            </Link>
                  
         </motion.div>
-        {/* <div className={styles.navlist}>
-            <Link href="#skills">Skills</Link>
-            <Link href="#projects">Projects</Link>
-            <Link href="#about">About</Link>
-        </div> */}
 
         <motion.div 
             className={styles.socials}
@@ -61,11 +53,11 @@ function Navbar() {
                 target={"_blank"}
                 fgColor="gray"
                 bgColor="transparent"/>
-            <SocialIcon 
-                url='https://linkedin.com' 
+            {/* <SocialIcon 
+                url='https://www.linkedin.com/in/tituscoleman/' 
                 target={"_blank"}
                 fgColor="gray"
-                bgColor="transparent"/>
+                bgColor="transparent"/> */}
         
         </motion.div>
 

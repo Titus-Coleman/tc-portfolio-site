@@ -8,9 +8,8 @@
     width: 100%;
     padding-left: 0.5rem;
     justify-content: space-between;
-    opacity: 0.4;
     z-index: 1;
-    background: black;
+    background: hsla(0, 0%, 0%, 0.4);
 
 }
 .email {

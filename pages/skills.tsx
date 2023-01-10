@@ -127,7 +127,7 @@ function Skills() {
                 </div>
             </div>
         </li>
-        <li>
+        {/* <li>
             <div className={styles.hexagon}>
                 <div className={styles.img__container}> 
                         <Image
@@ -141,7 +141,7 @@ function Skills() {
                     </div>
                 </div>
             </div>
-        </li>
+        </li> */}
         <li>
             <div className={styles.hexagon}>
                     <div className={styles.img__container}> 
@@ -157,7 +157,7 @@ function Skills() {
                 </div>
             </div>
         </li>
-        <li>
+        {/* <li>
             <div className={styles.hexagon}>
                 <div className={styles.img__container}> 
                         <Image
@@ -171,7 +171,7 @@ function Skills() {
                     </div>
                 </div>
             </div>
-        </li>
+        </li> */}
         <li>
             <div className={styles.hexagon}>
                 <div className={styles.img__container}> 
@@ -187,7 +187,7 @@ function Skills() {
                 </div>
             </div>
         </li>
-        <li>
+        {/* <li>
             <div className={styles.hexagon}>
                 <div className={styles.img__container}> 
                         <Image
@@ -201,8 +201,8 @@ function Skills() {
                     </div>
                 </div>
             </div>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
             <div className={styles.hexagon}>
                 <div className={styles.img__container}> 
                         <Image
@@ -216,7 +216,7 @@ function Skills() {
                     </div>
                 </div>
             </div>
-        </li>
+        </li> */}
         <li>
             <div className={styles.hexagon}>
                 <div className={styles.img__container}> 

@@ -5,15 +5,19 @@ import BackgroundCircles from '../components/BackgroundCircles';
 import styles  from '../styles/Hero.module.css'
 import profilePic from '../public/serge-template.jpeg'
 import Link from 'next/link';
+import { PageInfo } from '../typings';
+import { urlFor } from '../sanity';
 
 
-type Props = {};
+type Props = {
+  pageInfo: PageInfo
+};
 
-function Hero({}: Props) {
+function Hero({ pageInfo }: Props) {
     const [text, count] = useTypewriter({
       words: [
           'relentless learner.',
-          'web3 native.',
+          'builder.',
           'I 💗 simple UIs.', 
           '...and Cortados! ☕'],
       loop: true,
@@ -32,7 +36,7 @@ function Hero({}: Props) {
         </div>
       <div className={styles.heroInfo}>
         <h1>Titus Coleman</h1>
-      <h2 className={styles.hero_h2}>Software Engineer</h2>
+      <h2 className={styles.hero_h2}>{pageInfo.role}</h2>
       <h3>
         <span>{text}</span>
         <Cursor cursorColor='#E4572E'/>

@@ -1,7 +1,7 @@
 .projects_container {
     position: relative;
     background: transparent;
-    scroll-snap-align: start;
+    scroll-snap-align: end;
     justify-content: space-evenly;
     align-items: center;
     justify-items: center;
@@ -15,12 +15,21 @@
     letter-spacing: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
 }
 
-.slideshow {
+.slideshow__items {
     display: inline-flex;
     gap: 2rem;
     justify-items: center;
     margin: auto;
+}
+
+.slideshow {
+    cursor: grab;
+    overflow: hidden;
+    background: hsla(0, 0%, 0%, 0.4);
+    padding: 2.5rem;
+    border: 0px solid transparent;
+    border-radius: 1rem;
 }
