@@ -32,7 +32,7 @@ export default function Home({pageInfo, skills, projects}: Props) {
           content=" The portfolio site of Titus Coleman - Software Engineer / Developer. 
           Experienced in full-stack web development as well as web3 / crypto (Ripple/XRP & Solana), Titus offers
           a perspective on simplifying the web and mobile experience to bring the maximum amount of users
-          to projects" />
+          to projects." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -44,7 +44,7 @@ export default function Home({pageInfo, skills, projects}: Props) {
       
       
       <Skills />
-      <Projects />
+      <Projects projects={projects}/>
       <About />
       <ContactMe />
       

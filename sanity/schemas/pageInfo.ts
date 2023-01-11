@@ -13,7 +13,7 @@ export default defineType({
     defineField({
       name: "heroImage",
       title: "HeroImage",
-      type: "image",
+      type: "cloudinary.asset",
     }),
    ]
 });

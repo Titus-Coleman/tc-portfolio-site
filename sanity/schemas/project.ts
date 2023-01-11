@@ -6,6 +6,12 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
+      name: 'priority',
+      title: 'Priority',
+      description: 'Prominence of the project',
+      type: 'number',
+    }),
+    defineField({
       name: 'title',
       title: 'Title',
       description: 'Title of the project',
@@ -20,7 +26,7 @@ export default defineType({
     defineField({
       name: 'image',
       title: 'Image',
-      type: 'image',
+      type: 'cloudinary.asset',
       options: {
         hotspot: true,
       },
