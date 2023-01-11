@@ -14,6 +14,8 @@ interface Image {
 }
 
 interface Technologies {
+    title: ReactNode;
+    _id: Key | null | undefined;
     _key: string;
     _ref: string;
     _type: "reference";

@@ -25,8 +25,9 @@ export default defineType({
     }),
     defineField({
       name: 'image',
-      title: 'Image',
+      title: 'Cloudinary Images',
       type: 'cloudinary.asset',
+      description: 'IMGs from Cloudinary',
       options: {
         hotspot: true,
       },

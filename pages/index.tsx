@@ -43,7 +43,7 @@ export default function Home({pageInfo, skills, projects}: Props) {
         
       
       
-      <Skills />
+      <Skills skills={skills}/>
       <Projects projects={projects}/>
       <About />
       <ContactMe />

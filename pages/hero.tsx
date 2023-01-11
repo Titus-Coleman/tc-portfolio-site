@@ -6,7 +6,6 @@ import styles  from '../styles/Hero.module.css'
 import profilePic from '../public/serge-template.jpeg'
 import Link from 'next/link';
 import { PageInfo } from '../typings';
-import { urlFor } from '../sanity';
 
 
 type Props = {
@@ -28,8 +27,8 @@ function Hero({ pageInfo }: Props) {
     <section id="hero" className={styles.hero_container}>
       <BackgroundCircles />
       <div className={styles.hero_image}>
-      <Image 
-        src={profilePic}
+      <Image
+        src={pageInfo.heroImage.secure_url}
         alt='photo of Titus Coleman - Software Engineer / web3 Developer'
         width={200}
         height={200}/>

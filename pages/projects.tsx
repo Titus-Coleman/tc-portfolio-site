@@ -28,7 +28,7 @@ function Projects({ projects }: Props) {
                 <div className={styles.card__img}>
                   <img
                     className={styles.image}
-                    src={pCard.image}
+                    src={pCard.image.secure_url}
                     alt="Picture of the project"
                     width={300}
                     height={200}
