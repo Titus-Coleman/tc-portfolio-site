@@ -9,7 +9,9 @@ type Props = {
 
 function Skills({skills}: Props) {
   return (
-    <section className={styles.hex_container}>
+    <>
+    <hr id="skills" className={styles.hr}/>
+    <section  className={styles.hex_container}>
         <h3 className={styles.skillsTitle}>Skillset</h3>
       <ul id={styles.grid} className={styles.clear}>
         {skills.map((skill,i) => (
@@ -31,6 +33,7 @@ function Skills({skills}: Props) {
         ))}
       </ul>
     </section>
+    </>
   )
 }
 

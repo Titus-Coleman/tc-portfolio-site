@@ -6,10 +6,12 @@
   margin: 0;
 }
 
+
+
 html, body, main {
   height: 100%;
   background-color: #012A36;   /*#29274CCC*/
-
+  font-size: 16px;
   color: #D8E1FF;
   
 }

@@ -50,12 +50,12 @@ function ContactMe() {
 
 
   return (
+    <>
+    <hr id='contact'
+      className={styles.hr}/>
     <section>
       <h3 className={styles.contactTitle}>Contact</h3>
-      {/* <p>dev@tituscoleman.com</p> */}
-    
     <div 
-      id='contact'
       className={styles.contactBox}>
     <form className={styles.contactForm}
           onSubmit={(handleSubmit)}
@@ -135,6 +135,7 @@ function ContactMe() {
     </form>
     </div>
     </section>
+    </>
   )
 }
 

@@ -1,7 +1,10 @@
+.hr {
+    color: transparent
+}
+
 .aboutContainer {
     position: relative;
     scroll-snap-align: start;
-    height: 100vh;
     justify-content: space-evenly;
     align-items: center;
     justify-items: center;
@@ -11,19 +14,15 @@
     
 }
 
-.aboutText {
-    margin-top: 2rem;
-}
-
-.aboutText p {
-    /* margin-bottom: 1rem; */
-}
-
 .aboutTitle {
     text-transform: uppercase;
     letter-spacing: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-bottom: 5rem;
-    
+    margin-bottom: 4rem;
+    font-size: clamp(0.9rem, 4vw , 7rem);
+}
+
+.aboutText {
+    font-size: clamp(1rem, 4vw , 3rem);;
 }

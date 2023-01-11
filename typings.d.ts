@@ -6,6 +6,7 @@ interface SanityBody {
 }
 
 interface Image {
+    secure_url: string | StaticImport;
     _type: "image";
     asset: {
         _ref: string;

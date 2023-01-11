@@ -25,7 +25,7 @@ function Hero({ pageInfo }: Props) {
 
   return (
     <section id="hero" className={styles.hero_container}>
-      <BackgroundCircles />
+      
       <div className={styles.hero_image}>
       <Image
         src={pageInfo.heroImage.secure_url}
@@ -36,11 +36,11 @@ function Hero({ pageInfo }: Props) {
       <div className={styles.heroInfo}>
         <h1>Titus Coleman</h1>
       <h2 className={styles.hero_h2}>{pageInfo.role}</h2>
-      <h3>
+      <h3 className={styles.hero_h3}>
         <span>{text}</span>
         <Cursor cursorColor='#E4572E'/>
       </h3>
-      <div>
+      <div className={styles.hero_btn_group}>
         <Link href="#skills"
               className={styles.hero_button}>
           Skills
@@ -59,11 +59,16 @@ function Hero({ pageInfo }: Props) {
         </Link>
       </div>
       </div>
-      <svg className={styles.arrows}>
+      <p className={styles.scroll__text}>Scroll for more</p>
+      <Link 
+        href="#skills"
+        className={styles.arrows}>
+      <svg>
 							<path className={styles.a1} d="M0 0 L30 32 L60 0"></path>
 							<path className={styles.a2} d="M0 20 L30 52 L60 20"></path>
 							<path className={styles.a3} d="M0 40 L30 72 L60 40"></path>
 						</svg>
+      </Link>
     </section>
   )
 }

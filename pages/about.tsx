@@ -7,8 +7,10 @@ interface Props {
 0
 function About(props: Props) {
   return (
+    <>
+    <hr id='about'
+      className={styles.hr}/>
     <section 
-      id='about'
       className={styles.aboutContainer}>
       <h3 className={styles.aboutTitle}>About</h3>
       <div className={styles.aboutText}>
@@ -20,6 +22,7 @@ function About(props: Props) {
         </p>    
       </div>
     </section>
+    </>
   )
 }
 

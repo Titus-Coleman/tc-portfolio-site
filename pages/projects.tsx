@@ -10,6 +10,8 @@ type Props = {
 function Projects({ projects }: Props) {
 
   return (
+    <>
+    <hr id='projects' className={styles.hr}/>
     <section className={styles.projects_container}>
       <h3 className={styles.projects_title}>Projects</h3>
       <div className={styles.slideshow}>
@@ -75,6 +77,7 @@ function Projects({ projects }: Props) {
           </motion.div>
       </div>
     </section>
+    </>
   )
 }
 

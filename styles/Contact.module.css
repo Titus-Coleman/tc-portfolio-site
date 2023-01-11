@@ -1,3 +1,8 @@
+.hr {
+    color: transparent;
+    
+}
+
 .contactBox {
     position: relative;
    
@@ -5,6 +10,7 @@
 }
 
 .contactTitle {
+    scroll-behavior: smooth;
     text-transform: uppercase;
     letter-spacing: 1rem;
     padding-left: 2rem;
@@ -12,6 +18,8 @@
     /* margin-bottom: 10rem; */
     text-align: center;
     margin-bottom: 7rem;
+    font-size: clamp(0.9rem, 4vw , 7rem);
+
     
 }
 

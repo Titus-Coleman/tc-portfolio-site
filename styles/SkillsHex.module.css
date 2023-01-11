@@ -1,3 +1,6 @@
+.hr {
+    color: transparent
+}
 .hex_container {
     position: relative;
     background: transparent;
@@ -7,7 +10,7 @@
     justify-items: center;
     text-align: center;
     padding: 0.5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
 }
 
 .skillsTitle {
@@ -15,16 +18,13 @@
     letter-spacing: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-bottom: 10rem;
-    /* box-shadow: -1px -5px 9px 
-    rgba(255,255,255,0.15), 5px 5px 9px rgba(94,104,121,0.30);
-    border-radius: 2rem;
-    border-color: transparent; */
+    margin-bottom: 4rem;
+    font-size: clamp(0.9rem, 4vw , 7rem);
 }
 
 #grid {
     position: relative;
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
     padding: 0; /* Clears unordered list default of 40px */
 }
@@ -131,7 +131,7 @@
 
 .text {
     color: #012A36;
-    font-size: 20px;
+    font-size: clamp(0.55rem, -460rem + 300vw, 3rem);
     font-weight: bolder;
     position: absolute;
     top: 50%;

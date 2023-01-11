@@ -1,3 +1,7 @@
+.hr {
+    color: transparent
+}
+
 .projects_container {
     position: relative;
     background: transparent;
@@ -15,7 +19,8 @@
     letter-spacing: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: clamp(0.9rem, 4vw , 7rem);
 }
 
 .slideshow__items {
