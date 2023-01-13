@@ -1,0 +1,122 @@
+.hr {
+    color: transparent
+}
+
+.projects_container {
+    position: relative;
+    background: transparent;
+    scroll-snap-align: end;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 10rem;
+}
+
+.projects_title {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+    font-size: clamp(0.9rem, 4vw , 7rem);
+}
+
+.slideshow__items {
+    display: inline-flex;
+    gap: 2rem;
+    justify-items: center;
+    margin: auto;
+}
+
+.slideshow {
+    cursor: grab;
+    overflow: hidden;
+    background: hsla(0, 0%, 0%, 0.4);
+    padding: 2.5rem;
+    border: 0px solid transparent;
+    border-radius: 1rem;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 35rem;
+    width: 20rem;
+    overflow: hidden;
+    color: #012A36;
+    text-decoration: none;
+    border-radius: calc(40 * 0.063rem);
+    /* border-color: blueviolet; */
+    /* border-style: dashed; */
+    padding: 1rem;
+    background-color: #D8E1FF;
+    margin: auto;
+    box-shadow: black;
+}
+
+.card__img {
+    /* position: absolute; */
+    object-fit: contain;
+    /* top: -10rem;
+    left: 0; */
+    
+}
+
+.image {
+}
+
+.card__title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card__description {
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+}
+
+.card__info {
+
+}
+
+.card__techstack {
+    display: inline-block;
+    justify-content: space-evenly;
+}
+
+.card__tag{
+    display: inline-block;
+    border-radius: 3px;
+    padding: .3rem /*.2rem .5rem .3rem*/;
+    border-radius: 4px;
+    background: #508CA4/*#231123*/;
+    font-weight: 500;
+    margin: .25em .1em;
+    font-size: 0.6rem;
+    color: #FFF;
+    letter-spacing: 0.1rem;
+    
+}
+
+
+.card__links {
+    
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    
+}
+
+.card__links > button {
+    /* border-radius: 1rem;
+    border-width: 1px;
+    border-color: #E4572E;
+    background: none; */
+}

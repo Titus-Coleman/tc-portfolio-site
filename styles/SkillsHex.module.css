@@ -29,6 +29,10 @@
     padding: 0; /* Clears unordered list default of 40px */
 }
 
+
+.clear {
+    position: relative;
+}
 .clear:after {
     content: "";
     display: block;

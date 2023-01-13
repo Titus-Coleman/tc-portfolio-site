@@ -14,67 +14,56 @@ function Projects({ projects }: Props) {
     <hr id='projects' className={styles.hr}/>
     <section className={styles.projects_container}>
       <h3 className={styles.projects_title}>Projects</h3>
-      <div className={styles.slideshow}>
-          <motion.div
-            className={styles.slideshow__items}
-            initial={{ scale: 0 }}
-            animate={{ rotate: 0, scale: 1}}
-            transition={{
-              type: "spring",
-              stiffness: 80,
-              damping: 10,
-            }}
-            >
-              {projects?.map((pCard, i) => (
-                <div key={i} className={styles.card}>
-                <div className={styles.card__img}>
-                  <img
-                    className={styles.image}
-                    src={pCard.image.secure_url}
-                    alt="Picture of the project"
-                    width={300}
-                    height={200}
-                    />
+      <div className={styles.slide__container}>
+          <div className={styles.slide__content}>
+            <div className={styles.card__wrapper}>
+              <div className={styles.card}>
+                
+                <div className={styles.image__content}>
+                  <span className={styles.overlay}></span>
+                  <div className={styles.card__image}>
+                    <img 
+                        className={styles.card__img}
+                        src="app-mockup.svg" 
+                        alt=""  />
+                  </div>
                 </div>
-                <div className={styles.card__info}>
-                  <span>{i+1} of {projects.length}</span>
-                  <h4 className={styles.card__title}>{pCard?.title}</h4>
-                  <p className={styles.card__description}>{pCard?.summary}
-                  </p>
+                <div className={styles.card__content}>
+                  <h4 className={styles.card__name}>Project Name Here</h4>
+                  <p className={styles.card__description}>Description</p>
+                  <div className={styles.card__techstack}>
+                      <span className={styles.card__tag}>Javascript</span>
+                      <span className={styles.card__tag}>Rust</span>
+                      <span className={styles.card__tag}>React</span>
+                  </div>
+                  <div className={styles.card__links}>
+                      <a 
+                        // href={pCard.linkToSite}
+                        target={'_blank'}>
+                        <img
+                            className={styles.card__site}
+                            src={'/live-svgrepo-com.svg'}
+                            alt="Live Website Link"
+                            width={35}
+                            height={35}
+                            />
+                      </a>
+                      <a 
+                        // href={pCard.linkToGitHub}
+                        target={'_blank'}>
+                        <img
+                            className={styles.card__git}
+                            src={'/github-icon.svg'}
+                            alt="Project Github Link"
+                            width={35}
+                            height={35}
+                            />
+                      </a>
+                  </div>
                 </div>
-                <div className={styles.card__techstack}>
-                  {pCard?.technologies?.map((tech) => (
-                      <span key={tech?._id} className={styles.card__tag}>{tech?.title}</span>
-
-                  ))} 
-                </div>
-                <div className={styles.card__links}>
-                <a 
-                  href={pCard.linkToSite}
-                  target={'_blank'}>
-                  <img
-                      className={styles.card__site}
-                      src={'/live-svgrepo-com.svg'}
-                      alt="Live Website Link"
-                      width={35}
-                      height={35}
-                      />
-                </a>
-                <a 
-                  href={pCard.linkToGitHub}
-                  target={'_blank'}>
-                  <img
-                      className={styles.card__git}
-                      src={'/github-icon.svg'}
-                      alt="Project Github Link"
-                      width={35}
-                      height={35}
-                      />
-                </a>
-                </div>
-                </div>
-              ))}
-          </motion.div>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
     </>
