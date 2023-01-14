@@ -27,31 +27,24 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .slide__container {
-    width: 1180px;
-    /* width: 50rem; */
+    max-width: 800px;
+    width: 50rem;
     background: hsla(0, 0%, 0%, 0.4);
-    overflow-x: hidden;
-    overflow: hidden;
-    border-radius: 2rem;
-    margin: auto;
-    
+    overflow-y: hidden;
 
 }
 
-/* .slide__content {
+.slide__content {
     margin: 0 2.5rem;
     cursor: grab;
-} */
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .card__wrapper{
+    
     display: inline-flex;
     flex-direction: row;
-    /* margin: 0 2.5rem; */
-    cursor: grab;
-    
-    margin-left: -48rem;
 }
 
 .card {

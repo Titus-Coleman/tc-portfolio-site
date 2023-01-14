@@ -13,9 +13,10 @@ import { Skill, PageInfo, Project } from '../typings'
 import { fetchPageInfo } from '../utils/fetchPageInfo'
 import { fetchSkills } from '../utils/fetchSkills'
 import { fetchProjects } from '../utils/fetchProjects'
+import { EmblaOptionsType } from 'embla-carousel-react'
 
 const inter = Inter({ subsets: ['latin'] })
-
+const OPTIONS: EmblaOptionsType = { loop: true }
 
 type Props = {
     pageInfo: PageInfo;
@@ -44,7 +45,7 @@ export default function Home({pageInfo, skills, projects}: Props) {
       
       
       <Skills skills={skills}/>
-      <Projects projects={projects}/>
+      <Projects projects={projects} options={OPTIONS}/>
       <About />
       <ContactMe />
       

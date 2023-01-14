@@ -11,9 +11,13 @@ export default defineType({
       type: "string",
     }),
     defineField({
-      name: "aboutImage",
-      title: "AboutImage",
-      type: "image",
+      name: 'image',
+      title: 'About Image',
+      type: 'cloudinary.asset',
+      description: 'IMGs from Cloudinary',
+      options: {
+        hotspot: true,
+      },
     }),
    ]
 });

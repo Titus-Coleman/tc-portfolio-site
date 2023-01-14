@@ -33,6 +33,12 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'alt_image_text',
+      title: 'Alt Image Text',
+      type: 'text',
+      description: 'Add text to the image',
+    }),
+    defineField({
       name: 'technologies',
       title: 'Technologies',
       type: 'array',

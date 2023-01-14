@@ -10,7 +10,8 @@
     justify-items: center;
     text-align: center;
     padding: 0.5rem;
-    
+    background:hsla(0, 0%, 0%, 0.4);
+    border-radius: 3rem;
     
 }
 
