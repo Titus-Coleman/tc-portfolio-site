@@ -35,7 +35,7 @@ export default function Home({pageInfo, skills, projects}: Props) {
           a perspective on simplifying the web and mobile experience to bring the maximum amount of users
           to projects." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon-tc.ico" />
       </Head>
 
       <Navbar/>

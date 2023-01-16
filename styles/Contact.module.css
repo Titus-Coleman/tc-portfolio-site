@@ -19,79 +19,72 @@
     text-align: center;
     margin-bottom: 5rem;
     font-size: clamp(0.9rem, 4vw , 7rem);
-    
+ }
 
-    
+ 
+
+.formInput:focus ~ label, .msgForm:focus ~ label, .formInput:valid ~ label, .msgForm:valid ~ label {
+    font-size: 0.75em;
+    color: #DED6D6;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
 }
 
-.contactTitle+p {
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-bottom: 10rem;
-    text-align: center;
-    justify-content: center;
-    font-size: 0.5rem;
-}
 
-.contactForm {
-    position: relative;
-    display: grid;
-    gap: 0.5rem;
-    padding: 1rem;
-    margin-bottom: 5rem;
-}
-
-/* .contactForm form div {
-    margin: 1rem;
-} */
 
 .inputDiv {
+    float: left;
+    width: 293px;
+    margin: 1rem;
     position: relative;
-    margin-bottom: 2rem;
+    border-radius: 4px;
 }
 
-.inputLabel {
+.formLabel {
+    color: blue;
+    padding: 1.3rem 30px 1rem 30px;
     position: absolute;
-    top: -0.1rem;
-    left: 0.1rem;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
     pointer-events: none;
-    transition: .5s;
+}
+
+.formInput, .msgForm {
+    padding: 1.875rem;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #395E66;
+    color: #DED6D6;
+    border-radius: 0.25rem;
     
 }
 
-.inputForm:focus ~ .inputLabel,
-.inputForm:required:valid ~ .inputLabel,
-.inputForm:optional:valid ~ .inputLabel {
-    top: -1.5rem;
-}
+.formInput:focus,
+.msgForm:focus { outline: 0; }
 
-
-#email:focus:invalid ~ .inputLabel {
-    top: -1.5rem;
-    color: red;
-}
-
-
-
-.inputForm {
-    background: transparent;
-    border: none;
-    border-bottom: 0.1rem solid #000000;
-    width: 75%;
+.formInput:focus ~ span,
+.msgForm:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
 }
 
 .msgForm {
-    height: 10rem;
     width: 100%;
-    background-color: #D6D4A0
+    min-height: 15rem;
 }
 
-.formBtn {
-    text-transform: uppercase;
-    margin-top: -2rem;
-    background-color: #D8E1FF;
-    border-radius: 2rem;
+.contactBox {
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid #395E66;
 }
 
+.formError {
+    color: red;
+}

@@ -12,6 +12,11 @@
     padding: 0.5rem;
     background:hsla(0, 0%, 0%, 0.4);
     border-radius: 3rem;
+    background-image: radial-gradient(#313134 2px, transparent 2px), radial-gradient(#313134 2px, transparent 2px);
+    background-size: 24px 24px;
+    background-position: 0 0, 12px 12px;
+    background-color: #2d2d2a;
+    height: 100%;
     
 }
 
@@ -24,6 +29,31 @@
     font-size: clamp(0.9rem, 4vw , 7rem);
 }
 
-.aboutText {
-    font-size: clamp(1rem, 4vw , 3rem);;
+.aboutText p {
+    font-size: clamp(1rem, 4vw , 1.5rem);
+    /* text-align:left; */
+    margin-bottom: 1rem;
+}
+
+.motto {
+    background: -webkit-linear-gradient(#DED6D6, #8AEA92);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.aboutGrid {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutGrid {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        align-items: center;
+    }
 }

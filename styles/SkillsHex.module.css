@@ -3,7 +3,7 @@
 }
 .hex_container {
     position: relative;
-    background: transparent;
+    /* background: transparent; */
     scroll-snap-align: start;
     justify-content: space-evenly;
     align-items: center;
@@ -11,6 +11,11 @@
     text-align: center;
     padding: 0.5rem;
     margin-bottom: 4rem;
+    background-image: radial-gradient(#313134 2px, transparent 2px), radial-gradient(#313134 2px, transparent 2px);
+    background-size: 24px 24px;
+    background-position: 0 0, 12px 12px;
+    background-color: #2d2d2a;
+    height: 100%;
 }
 
 .hexagon {
@@ -90,6 +95,9 @@
     margin-left: 0.5%;
 }
 
+.img__container {
+  
+}
 
 .img__container:hover .overlay {
     opacity: 0.9;
@@ -140,7 +148,7 @@
 
 .text {
     color: #012A36;
-    font-size: clamp(0.55rem, -460rem + 300vw, 3rem);
+    font-size: clamp(0.55rem, 4vw, 3rem);
     font-weight: bolder;
     position: absolute;
     top: 50%;
@@ -149,4 +157,10 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+
+  @media screen and (max-width: 450px) {
+    #grid {
+        width: 100%;
+    }
   }
