@@ -6,9 +6,9 @@
     /* position: relative; */
     background: transparent;
     scroll-snap-align: end;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    justify-items: center;
+    /* justify-items: center; */
     text-align: center;
     padding: 0.5rem;
     margin-bottom: 10rem;
@@ -27,13 +27,14 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .slide__container {
-    width: 1180px;
-    /* width: 50rem; */
+    /* width: 800px; */
+    width: 72.5rem;
     background: hsla(0, 0%, 0%, 0.4);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     overflow: hidden;
     border-radius: 2rem;
     margin: auto;
+    /* border: 4px solid red; */
     
 
 }
@@ -47,24 +48,22 @@
 
 .card__wrapper{
     display: inline-flex;
-    flex-direction: row;
-    /* margin: 0 2.5rem; */
-    cursor: grab;
-    
-    margin-left: -48rem;
+    cursor:grab;
+    height: auto;
+    margin: auto;
 }
 
 .card {
-    display: grid;
-    grid-template-rows: max-content 12.5rem 1fr;;
     position: relative;
+    display: grid;
+    grid-template-rows: max-content 12.5rem 1fr;
     /* width: 16rem;
     height: 24rem; */
     width: 20rem;
     height: 36rem;
     border-radius: 1.563rem;
+    text-align: center;
     background-color: #D8E1FF;
-
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -90,7 +89,7 @@
     /* margin: auto; */
     position: relative;
     row-gap: 0.313rem;
-    
+    overflow: hidden;
 }
 
 .overlay {

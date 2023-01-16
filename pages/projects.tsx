@@ -1,32 +1,32 @@
-import { motion } from 'framer-motion'
 import Image from 'next/image';
-import { useRef, useState, useEffect } from 'react'
 import styles from '../styles/Projects.module.css'
 import { Project } from '../typings'
 import useEmblaCarousel, { EmblaOptionsType } from 'embla-carousel-react';
 
 
 type Props = {
-  projects: Project[];
-  options?: EmblaOptionsType;
-};
+  projects: Project[]
+  options?: EmblaOptionsType
+}
 
 
 
 function Projects({ projects, options }: Props) {
 
-  const [emblaRef] = useEmblaCarousel(options);
+  const [emblaRef] = useEmblaCarousel({loop: true});
 
   return (
     <>
     <hr id='projects' className={styles.hr}/>
     <section className={styles.projects_container}>
       <h3 className={styles.projects_title}>Projects</h3>
-      <div className={styles.slide__container} ref={emblaRef}>
+      
+      <div className={styles.slideshow}>
+      <div className={styles.slide__container}>
+
         <div className={styles.card__wrapper} >
             {projects?.map((pCard, i) => (
               <article key={i} className={styles.card}>
-      
                 <header className={styles.card__header}>
                   <h5>{i+1} of {projects.length}</h5>
                 <h4 className={styles.card__name}>{pCard?.title}</h4>
@@ -79,8 +79,10 @@ function Projects({ projects, options }: Props) {
               </article>
               ))} 
               </div>
+                     
+              </div>
       </div>
-    </section>
+      </section>
     </>
   )
 }
