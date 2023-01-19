@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -7,16 +9,19 @@
   /* max-width: 1440px; */
 }
 
-
-
-html, body, main {
+html,
+body,
+main {
   height: 100%;
-  background-color: #2D2D2A  ;   /*#29274CCC
+  background-color: #2d2d2a; /*#29274CCC
   #012A36*/
   font-size: 16px;
-  color: #DED6D6;
+  color: #ded6d6;
   /* #D8E1FF */
-  
+  background-image: radial-gradient(#313134 2px, transparent 2px),
+    radial-gradient(#313134 2px, transparent 2px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
 }
 
 html {
@@ -30,17 +35,31 @@ body {
   --tw-scroll-snap-strictness: mandatory;
   scroll-behavior: smooth;
 }
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 

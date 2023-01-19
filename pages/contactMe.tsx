@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
-import styles from '../styles/Contact.module.css'
-import { useForm, SubmitHandler } from "react-hook-form";
+import React, { useState } from 'react';
+import styles from '../styles/Contact.module.css';
+import { useForm, SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from "zod";
-import { useTsController, createTsForm, createUniqueFieldSchema } from '@ts-react/form'
+import * as z from 'zod';
+import { useTsController, createTsForm, createUniqueFieldSchema } from '@ts-react/form';
+import SentModal from '../components/SentModal';
 
 interface TextFieldProps {
   label: string;
@@ -14,17 +15,18 @@ function TextField(props: TextFieldProps) {
   return (
     <div className={styles.inputDiv}>
       <input
-        className={styles.formInput} 
+        name={field.value}
+        className={styles.formInput}
         type={'text'}
         value={field.value}
         onChange={(e) => {
           field.onChange(e.target.value);
         }}
-        />
-        <label className={styles.formLabel} >{props.label ? props.label : ""}</label>
-        {error?.errorMessage && <span className={styles.formError}>{error?.errorMessage}</span>}
+      />
+      <label className={styles.formLabel}>{props.label ? props.label : ''}</label>
+      {error?.errorMessage && <span className={styles.formError}>{error?.errorMessage}</span>}
     </div>
-  )
+  );
 }
 
 function TextAreaField(props: TextFieldProps) {
@@ -37,14 +39,17 @@ function TextAreaField(props: TextFieldProps) {
         onChange={(e) => {
           field.onChange(e.target.value);
         }}
-        />
-        <label className={styles.msgLabel}>{props.label ? props.label : ""}</label>
-        {error?.errorMessage && <span className={styles.formError}>{error?.errorMessage}</span>}
+      />
+      <label className={styles.msgLabel}>{props.label ? props.label : ''}</label>
+      {error?.errorMessage && <span className={styles.formError}>{error?.errorMessage}</span>}
     </div>
-  )
+  );
 }
 
-const TextAreaSchema = createUniqueFieldSchema(z.string().min(10, "Hmm, can you give me more details please?"), "id");
+const TextAreaSchema = createUniqueFieldSchema(
+  z.string().min(10, 'Hmm, can you give me more details please?'),
+  'id',
+);
 
 const mapping = [
   [z.string(), TextField],
@@ -57,83 +62,80 @@ const schema = z.object({
   firstname: z.string(),
   lastname: z.string(),
   company: z.string(),
-  email: z.string().email("Please enter a valid email address"),
+  email: z.string().email('Please enter a valid email address'),
   subject: z.string(),
   message: TextAreaSchema,
 });
-
 
 type Schema = z.infer<typeof schema>;
 
 function ContactMe() {
   useForm<Schema>({
-    resolver: zodResolver(schema)
+    resolver: zodResolver(schema),
   });
 
   const onSubmit = async (data: Schema) => {
-    
-    console.log(data)
+    console.log(data);
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
+      const response = await fetch('/api/contact', {
+        method: 'POST',
         headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
       });
       if (response.ok) {
-       console.log("yay")
+        console.log('yay');
       } else {
         console.error(response);
       }
-    }
-    catch (error) {
+    } catch (error) {
       console.error(error);
     }
   };
 
-
   return (
-    <>
-    <hr id='contact'
-      className={styles.hr}/>
-      <h3 className={styles.contactTitle}>Contact</h3>
-    <div className={styles.contactBox}>
-    <MyForm 
-      schema={schema}
-      
-      props={
-        {
-          firstname: {
-            label: "First Name"
-          },
-          lastname: {
-            label: "Last Name"
-          },
-          company: {
-            label: "Company"
-          },
-          email: {
-            label: "Email Address"
-          },
-          subject: {
-            label: "Subject"
-          },
-          message: {
-            label: "Message"
-          },
-        }
-      }
-      onSubmit={onSubmit}
-      renderAfter={() => <button 
-        className={styles.formBtn}  
-        type="submit">Submit</button>}
-      />
-
+    <div className={styles.contactPage}>
+      <hr id="contact" className={styles.hr} />
+      <section>
+        <h3 className={styles.contactTitle}>Get In Touch</h3>
+        <div className={styles.contactBox}>
+          <MyForm
+            schema={schema}
+            props={{
+              firstname: {
+                label: 'First Name',
+              },
+              lastname: {
+                label: 'Last Name',
+              },
+              company: {
+                label: 'Company',
+              },
+              email: {
+                label: 'Email Address',
+              },
+              subject: {
+                label: 'Subject',
+              },
+              message: {
+                label: 'Message',
+              },
+            }}
+            onSubmit={onSubmit}
+            renderAfter={() => (
+              <div>
+                <button className={styles.formBtn} type="submit">
+                  Submit
+                </button>
+              </div>
+            )}
+          />
+        </div>
+      </section>
     </div>
-    </>
   );
-};
+}
 
-export default ContactMe
+export default ContactMe;
