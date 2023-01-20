@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from '../styles/Projects.module.css';
 import { Project } from '../typings';
 import { motion } from 'framer-motion';
+import { RxDoubleArrowLeft, RxDoubleArrowRight } from 'react-icons/rx';
 
 type Props = {
   projects: Project[];
@@ -13,7 +14,11 @@ function Projects({ projects }: Props) {
       <hr id="projects" className={styles.hr} />
       <section className={styles.projects_container}>
         <h3 className={styles.projects_title}>Projects</h3>
-
+        <div className={styles.swipeIcons}>
+          <RxDoubleArrowLeft />
+          <p>swipe</p>
+          <RxDoubleArrowRight />
+        </div>
         <div className={styles.slideshow}>
           <motion.div className={styles.slide__container} whileTap={{ cursor: 'grabbing' }}>
             <motion.div
@@ -76,6 +81,11 @@ function Projects({ projects }: Props) {
               ))}
             </motion.div>
           </motion.div>
+          <div className={styles.swipeIcons}>
+            <RxDoubleArrowLeft />
+            <p>swipe</p>
+            <RxDoubleArrowRight />
+          </div>
         </div>
       </section>
     </>

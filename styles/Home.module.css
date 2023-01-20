@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.link {
+  margin-right: 0.5rem;
+}
+
+.source {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  margin: auto;
+  padding: 1rem;
+}

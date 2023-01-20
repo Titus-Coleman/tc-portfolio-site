@@ -39,7 +39,7 @@ function ContactMe() {
       });
 
       if (response.ok) {
-        setModelOpen(true);
+        // setModelOpen(true);
         setValues({ ...defaultState });
       } else {
         console.error(response);
@@ -78,22 +78,6 @@ function ContactMe() {
               />
               <label className={styles.inputLabel}>Last Name</label>
             </div>
-            {/* <div className={styles.inputDiv}>
-        <input className={styles.inputForm} 
-                name='title'
-                value={values.title}
-                onChange={handleChange}
-                id='title' required/>
-        <label className={styles.inputLabel}>Title</label>
-        </div>
-        <div className={styles.inputDiv}>
-        <input className={styles.inputForm} 
-                name='company'
-                value={values.company}
-                onChange={handleChange}
-                id='company' required/>
-        <label className={styles.inputLabel}>Company</label>
-        </div> */}
             <div className={styles.inputDiv}>
               <input
                 className={styles.inputForm}
@@ -106,16 +90,6 @@ function ContactMe() {
               />
               <label className={styles.inputLabel}>Email Address</label>
             </div>
-            {/* <div className={styles.inputDiv}>
-        <input className={styles.inputForm} 
-                name='phone'
-                type={'tel'}
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                value={values.phone}
-                onChange={handleChange}
-                id='phone' required/>
-        <label className={styles.inputLabel}>Phone Number, e.g.: 555-555-5555</label>
-        </div> */}
             <div className={styles.inputDiv}>
               <input
                 className={styles.inputForm}
@@ -140,10 +114,17 @@ function ContactMe() {
                 autoCorrect="on"
               />
             </div>
-            <button className={styles.formBtn} type="submit" id="submit" value={'submit'}>
+            <button
+              className={styles.formBtn}
+              type="submit"
+              id="submit"
+              value={'submit'}
+              onClick={handleSubmit}
+            >
               Submit
             </button>
           </form>
+
           {modelOpen && (
             <Modal
               open={modelOpen}
@@ -151,7 +132,7 @@ function ContactMe() {
                 setModelOpen(!modelOpen);
               }}
             >
-              Thanks, I'll reach out ASAP!
+              <p className={styles.modalText}>Thanks, I'll reach out ASAP!</p>
               <Image src={'/officeMeeting.svg'} fill alt="office meeting" />
               {/* <button
                 className={styles.modalClose}

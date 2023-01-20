@@ -8,6 +8,8 @@
 
 .aboutContainer {
   position: relative;
+  display: flex;
+  flex-direction: column;
   scroll-snap-align: start;
   justify-content: space-evenly;
   align-items: center;
@@ -16,8 +18,7 @@
   padding: 0.5rem;
   /* background: hsla(0, 0%, 0%, 0.4); */
   border-radius: 3rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+
   height: 100%;
   margin-bottom: 10rem;
 }
@@ -37,6 +38,12 @@
   margin-bottom: 1rem;
 }
 
+.aboutImage {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 .motto {
   background: -webkit-linear-gradient(#ded6d6, #8aea92);
   -webkit-background-clip: text;
@@ -54,8 +61,10 @@
 @media screen and (min-width: 1024px) {
   .aboutGrid {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: auto;
     align-items: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 }

@@ -38,8 +38,8 @@ function About(props: Props) {
               'https://res.cloudinary.com/duniv0ekp/image/upload/v1673831447/hero_image/Fresh_Folk_-_Strolling_gym8uu.svg'
             }
             alt={'coworkers walking'}
-            width={500}
-            height={500}
+            width={400}
+            height={400}
           ></Image>
         </div>
       </section>

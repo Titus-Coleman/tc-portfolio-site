@@ -48,7 +48,7 @@ export default function Home({ pageInfo, skills, projects }: Props) {
         <About />
         <ContactMe />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
