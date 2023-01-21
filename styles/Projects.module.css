@@ -48,6 +48,7 @@
   height: auto;
   margin: 1rem;
   scroll-snap-type: x mandatory;
+  margin-left: 0.3rem;
 }
 
 .card {

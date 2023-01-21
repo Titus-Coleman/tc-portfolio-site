@@ -21,6 +21,7 @@
   background: -webkit-linear-gradient(#8aea92, #e4572e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 1rem;
 }
 
 .hero_image {
