@@ -132,7 +132,7 @@ function ContactMe() {
                 setModelOpen(!modelOpen);
               }}
             >
-              <p className={styles.modalText}>Thanks, I'll reach out ASAP!</p>
+              <p className={styles.modalText}>Thanks, I will reach out ASAP!</p>
               <Image src={'/officeMeeting.svg'} fill alt="office meeting" />
               {/* <button
                 className={styles.modalClose}

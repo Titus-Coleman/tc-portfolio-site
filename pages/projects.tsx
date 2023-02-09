@@ -57,7 +57,7 @@ function Projects({ projects }: Props) {
                     </div>
 
                     <footer className={styles.card__links}>
-                      <a href={pCard.linkToSite} target={'_blank'}>
+                      <a href={pCard.linkToSite} target={'_blank'} rel="noreferrer">
                         <img
                           className={styles.card__site}
                           src={'/live-svgrepo-com.svg'}
@@ -66,7 +66,7 @@ function Projects({ projects }: Props) {
                           height={35}
                         />
                       </a>
-                      <a href={pCard.linkToGitHub} target={'_blank'}>
+                      <a href={pCard.linkToGitHub} target={'_blank'} rel="noreferrer">
                         <img
                           className={styles.card__git}
                           src={'/github-icon.svg'}

@@ -11,6 +11,7 @@ function footer() {
           className={styles.link}
           href={'https://github.com/Titus-Coleman/tc-portfolio-site'}
           target="_blank"
+          rel="noreferrer"
         >
           Source Code
         </a>

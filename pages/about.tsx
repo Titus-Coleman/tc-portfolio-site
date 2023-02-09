@@ -22,13 +22,13 @@ function About(props: Props) {
             </p>
             <p>
               <span className={styles.motto}>“Be obsessed or be average”.</span> A harsh motto to
-              live by but it's deeply motivational for me. I’m obsessed with the possibilities of
+              live by but it is deeply motivational for me. I am obsessed with the possibilities of
               building something <span>foundational</span> to the tech space. Each and every skill I
               explore and subsequently add to my tool belt has been studied with the goal in mind of
               improving myself to reach a level where only my <span>imagination</span> can hold me
               back. While solo learning never stops, being a part of a strong team and learning from
               seniors would be key to reaching that goal. With my willingness to learn, hard work
-              and ability to communicate, I’ll bring the level of teamwork necessary to insure the
+              and ability to communicate, I will bring the level of teamwork necessary to insure the
               project is successful while helping others along the way.
             </p>
           </div>
