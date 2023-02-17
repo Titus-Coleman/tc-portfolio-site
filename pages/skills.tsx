@@ -14,7 +14,7 @@ function Skills({ skills }: Props) {
       <section className={styles.hex_container}>
         <h3 className={styles.skillsTitle}>Skillset</h3>
         <ul id={styles.grid} className={styles.clear}>
-          {skills.map((skill, i) => (
+          {skills?.map((skill, i) => (
             <li key={i}>
               <div className={styles.hexagon}>
                 <div className={styles.img__container}>

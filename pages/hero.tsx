@@ -21,7 +21,7 @@ function Hero({ pageInfo }: Props) {
       <div className={styles.heroMain}>
         <div className={styles.hero_image}>
           <Image
-            src={pageInfo.heroImage.secure_url}
+            src={pageInfo?.heroImage.secure_url}
             alt="photo of Titus Coleman - Software Engineer / web3 Developer"
             width={400}
             height={400}
@@ -30,7 +30,7 @@ function Hero({ pageInfo }: Props) {
         <h1 className={styles.hero_h1}>Titus Coleman</h1>
       </div>
       <div className={styles.heroInfo}>
-        <h2 className={styles.hero_h2}>{pageInfo.role}</h2>
+        <h2 className={styles.hero_h2}>{pageInfo?.role}</h2>
         <h3 className={styles.hero_h3}>
           <span>{text}</span>
           <Cursor cursorColor="#E4572E" />

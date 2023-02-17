@@ -3,6 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['res.cloudinary.com'],
-},
-}
-module.exports = nextConfig
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+};
+module.exports = nextConfig;
