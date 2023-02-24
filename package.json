@@ -12,6 +12,7 @@
     "@hookform/resolvers": "^2.9.10",
     "@next/font": "13.0.7",
     "@portabletext/react": "^2.0.0",
+    "@sanity/cli": "^3.4.0",
     "@sanity/image-url": "^1.0.1",
     "@sanity/types": "^3.1.4",
     "@supabase/supabase-js": "^2.2.2",
