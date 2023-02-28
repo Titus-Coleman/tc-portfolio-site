@@ -28,14 +28,18 @@
   align-items: center;
 }
 
+.slideshow {
+  max-width: 100%;
+}
+
 .slide__container {
-  /* width: 800px; */
-  width: 72.5rem;
+  width: auto;
   max-width: 100vw;
-  background: hsla(0, 0%, 0%, 0.4);
+  /* background: hsla(0, 0%, 0%, 0.4); */
   /* overflow-x: hidden; */
   overflow: hidden;
   overflow-x: scroll;
+  scroll-snap-align: center;
   border-radius: 2rem;
   margin: auto;
   cursor: grab;
@@ -48,6 +52,7 @@
   height: auto;
   margin: 1rem;
   scroll-snap-type: x mandatory;
+  scroll-snap-align: center;
   margin-left: 0.3rem;
 }
 
@@ -184,5 +189,11 @@
   .card {
     width: 16rem;
     height: 24rem;
+  }
+}
+
+@media screen and (min-width: 1184px) {
+  .swipeIcons {
+    visibility: hidden;
   }
 }

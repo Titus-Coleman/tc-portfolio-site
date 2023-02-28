@@ -20,14 +20,17 @@ function Projects({ projects }: Props) {
           <RxDoubleArrowRight />
         </div>
         <div className={styles.slideshow}>
-          <motion.div className={styles.slide__container} whileTap={{ cursor: 'grabbing' }}>
-            <motion.div
-              drag="x"
-              dragConstraints={{ right: 400, left: -400 }}
+          <div
+            className={styles.slide__container}
+            // whileTap={{ cursor: 'grabbing' }}
+          >
+            <div
+              // drag="x"
+              // dragConstraints={{ right: 400, left: -400 }}
               className={styles.card__wrapper}
             >
               {projects?.map((pCard, i) => (
-                <motion.div key={i} className={styles.card}>
+                <div key={i} className={styles.card}>
                   <header className={styles.card__header}>
                     <h5>
                       {i + 1} of {projects.length}
@@ -77,10 +80,10 @@ function Projects({ projects }: Props) {
                       </a>
                     </footer>
                   </div>
-                </motion.div>
+                </div>
               ))}
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
           <div className={styles.swipeIcons}>
             <RxDoubleArrowLeft />
             <p>swipe</p>
