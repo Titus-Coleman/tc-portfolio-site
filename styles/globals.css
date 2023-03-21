@@ -26,6 +26,9 @@ main {
 
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  scroll-snap-stop: always;
 }
 body {
   line-height: 1.5;
@@ -69,7 +72,4 @@ main {
   /* grid-template-rows: repeat(4, 1fr); */
   gap: 5rem;
   margin: 0.5rem;
-  overflow-y: scroll;
-  scroll-snap-type: y proximity;
-  scroll-snap-stop: always;
 }

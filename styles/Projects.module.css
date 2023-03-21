@@ -41,7 +41,7 @@
   overflow-x: scroll;
   scroll-snap-align: center;
   border-radius: 2rem;
-  margin: auto;
+  /* margin: auto; */
   cursor: grab;
   /* border: 4px solid red; */
 }
@@ -50,10 +50,10 @@
   display: inline-flex;
   cursor: grab;
   height: auto;
-  margin: 1rem;
+  /* margin: 1rem; */
   scroll-snap-type: x mandatory;
-  scroll-snap-align: center;
-  margin-left: 0.3rem;
+  scroll-snap-align: left;
+  /* margin-left: -0.3rem; */
 }
 
 .card {

@@ -40,10 +40,10 @@ function Projects({ projects }: Props) {
                   <picture className={styles.image__content}>
                     <span className={styles.overlay}></span>
                     <div className={styles.card__image}>
-                      <Image
+                      <img
                         className={styles.card__img}
                         src={pCard.image.secure_url}
-                        alt=""
+                        alt={''}
                         width={320}
                         height={200}
                       />
